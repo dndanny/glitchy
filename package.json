@@ -13,6 +13,7 @@
     "react-dom": "^18",
     "mongoose": "^8.0.0",
     "next-auth": "5.0.0-beta.25",
+    "zod": "^3.22.4",
     "@monaco-editor/react": "^4.6.0",
     "lucide-react": "^0.300.0",
     "bcryptjs": "^2.4.3",

@@ -12,7 +12,7 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
   if(!User) await connectDB(); 
 
   const project = await Project.findOne({ _id: params.id, ownerId: session.user.id })
-    .populate('ownerId', 'name email'); // Populate owner name for the public link
+    .populate('ownerId', 'name email');
   
   if (!project) return NextResponse.json({ error: "Not found" }, { status: 404 });
   return NextResponse.json(project);
